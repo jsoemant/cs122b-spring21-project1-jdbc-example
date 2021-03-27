@@ -5,7 +5,7 @@ public class JDBC1 implements Parameters {
     public static void main(String[] arg) throws Exception {
 
         // Incorporate mySQL driver
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
+        Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
         // Connect to the test database
         Connection connection = DriverManager.getConnection("jdbc:" + Parameters.dbtype + ":///" + Parameters.dbname + "?autoReconnect=true&useSSL=false",
