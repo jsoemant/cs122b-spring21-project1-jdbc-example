@@ -4,8 +4,9 @@ This example shows how a Java program can use JDBC to connect with MySQL.
 
 ## To run this example: 
 
-1. Make sure you have properly installed Java, Maven, Git, MySQL, and Intellij on your local machine.
-2. Clone this repository using `git clone https://github.com/UCI-Chenli-teaching/cs122b-spring20-project1-jdbc-example.git`
+1. Make sure you have properly installed Java, Maven, Git, MySQL, and Intellij on your local machine. <br/>
+   This includes making sure that the MySQL version installed matches with the ```mysql-connector-java``` version in ```pom.xml```.
+2. Clone this repository using `git clone https://github.com/UCI-Chenli-teaching/cs122b-spring21-project1-jdbc-example.git`
 
 3. Create users and sample tables on mysql by executing the following command:
 
@@ -53,7 +54,8 @@ This example shows how a Java program can use JDBC to connect with MySQL.
 1. Open IntelliJ -> Import Project -> Choose the project you just cloned (The root path must contain the pom.xml!) -> Choose Import project from external model -> choose `Maven` -> Click on Finish -> The IntelliJ will load automatically
 2. If the system asks you to import MAVEN modules using the tooltip, just click on `import changes`
 3. If the IntelliJ shows `Project SDK is not defined`, that may because your IntelliJ doesn't have default SDK, so just click on `Setup SDK` and choose your JDK.
-4. To run JDBC1.java, JDBC2.java, click Run on the right corner, then you will successfully see the results.
+4. To run JDBC1.java, JDBC2.java, click Run on the right corner, then you will successfully see the results. <br/>
+    If the Run button is not visible or not clickable, right-click the java file in the Project tab (e.g. "JDBC1") and choose the option "Run JDBC1.main()". 
 
 ### Alternatively, to run the Java program within command line:
 
