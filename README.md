@@ -17,7 +17,7 @@ This example shows how a Java program can use JDBC to connect with MySQL.
 
  - create a test user and grant privileges:
     ```
-    mysql> CREATE USER 'mytestuser'@'localhost' IDENTIFIED BY 'mypassword';
+    mysql> CREATE USER 'mytestuser'@'localhost' IDENTIFIED BY 'My6$Password';
     mysql> GRANT ALL PRIVILEGES ON * . * TO 'mytestuser'@'localhost';
     ```
 
