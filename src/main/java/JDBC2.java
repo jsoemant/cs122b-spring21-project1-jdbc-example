@@ -16,16 +16,19 @@ public class JDBC2 {
         if (connection != null) {
             System.out.println("Connection established!!");
             System.out.println();
+
+
+            // create update DB statement -- deleting second record of table; return status
+            Statement update = connection.createStatement();
+
+            String deleteQuery = "delete from stars where id='755011'";
+
+            int retID = update.executeUpdate(deleteQuery);
+
+            // returns: either (1) the row count for SQL Data Manipulation Language (DML) statements or (2) 0 for SQL statements that return nothing
+            System.out.println("retID = " + retID);
+        } else {
+            System.out.println("no connection");
         }
-
-        // create update DB statement -- deleting second record of table; return status
-        Statement update = connection.createStatement();
-
-        String deleteQuery = "delete from stars where id='755011'";
-
-        int retID = update.executeUpdate(deleteQuery);
-
-        // returns: either (1) the row count for SQL Data Manipulation Language (DML) statements or (2) 0 for SQL statements that return nothing
-        System.out.println("retID = " + retID);
     }
 }

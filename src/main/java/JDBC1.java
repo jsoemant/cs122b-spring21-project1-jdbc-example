@@ -16,12 +16,12 @@ public class JDBC1 implements Parameters {
             System.out.println();
         }
 
-        // Create an execute an SQL statement to select all of table"Stars" records
+        // Create an execute an SQL statement to select all of table "stars" records
         Statement select = connection.createStatement();
         String query = "Select * from stars";
         ResultSet result = select.executeQuery(query);
 
-        // Get metatdata from stars; print # of attributes in table
+        // Get metadata from stars; print # of attributes in table
         System.out.println("The results of the query");
         ResultSetMetaData metadata = result.getMetaData();
         System.out.println("There are " + metadata.getColumnCount() + " columns");
